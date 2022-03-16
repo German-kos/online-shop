@@ -1,0 +1,19 @@
+  const onChangeHandler = (e) => { e.target.username
+    if (e.target.name === "username") setUserInput((prev)=>{ return {...prev, username: e.target.value} });
+    if (e.target.name === "password") setUserInput((prev)=>{ return {...prev, password: e.target.value} });
+  }
+  const handler = async (e) => {
+    // setUser({username: e.target[0].value, password: e.target[1].value})
+    // setUser((prev) => {return {...prev, [e.target.name]: e.target.value}})
+    e.preventDefault();
+    const promise = await axios.get("./files/users.json")
+     console.log(e)
+    const data = promise.data
+    const inputUsername = e.target[0].value
+    const userData = data.find
+      // console.log(res.data.find( obj => obj.username === e.target[0].value && obj.password === e.target[1].value))
+      if(data.find(obj => obj.username === e.target[0].value && obj.password === e.target[1].value)!== null){
+        setUser(data.find(obj => obj.username === e.target[0].value && obj.password === e.target[1].value))
+      }
+console.log(data);
+  };

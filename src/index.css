@@ -1,0 +1,20 @@
+.form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login-form {
+  border: 0.1em black;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 15px;
+}
+.login-fields {
+  margin-bottom: 10px;
+  display: block;
+  float: center;
+  justify-content: center;
+  margin-left:auto;
+  margin-right:auto;
+}
