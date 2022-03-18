@@ -1,6 +1,7 @@
 import { Login } from "./components/login-prot";
 import { React, useState, useEffect } from "react";
 import axios from "axios";
+import { SiteRouter } from "./components/router-prot";
 // import { Test } from "./components/component-test";
 //
 function App() {
@@ -24,7 +25,9 @@ function App() {
   }, [user]);
   //conditional render for logged in users
   if (user !== undefined) {
-    return <h1>Welcome, {user.username}</h1>;
+    return (
+      <SiteRouter/>
+    )
   }
   return (
     <div>
