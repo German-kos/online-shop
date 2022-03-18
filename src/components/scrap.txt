@@ -17,3 +17,53 @@
       }
 console.log(data);
   };
+
+  //
+
+    // const [user, setUser] = useState(undefined);
+  // if (e.target.name === "username") setUser((prev)=>{ return {...prev, username: e.target.value} });
+  // if (e.target.name === "password") setUser((prev)=>{ return {...prev, password: e.target.value} });
+  // setUser({username: e.target[0].value, password: e.target[1].value})
+  // console.log(res.data.find( obj => obj.username === e.target[0].value && obj.password === e.target[1].value))
+  // if(res.data.find(obj => obj.username === e.target[0].value && obj.password === e.target[1].value)!== null){
+    // }
+    
+    
+    // const handler = (e) => {
+    // e.preventDefault();
+    // axios.get("./files/users.json").then((res) => {
+    //   setUser(
+    //     res.data.find(
+    //       (obj) =>
+    //         obj.username === e.target[0].value &&
+    //         obj.password === e.target[1].value
+    //     )
+    //   );
+    // });
+
+    // setUser((prev) => {return {...prev, [e.target.name]: e.target.value}})
+  // };
+
+  // useEffect(() => {
+  //   if(user != undefined){
+  //     return(
+  //       <div>
+  //         successs
+  //       </div>
+  //     )
+  //   }
+  // },[user]);
+
+  // function handler(e){
+//   e.preventDefault();
+//   axios.get("./files/users.json").then((res) => {
+//     setUser(
+//       res.data.find(
+//         (obj) =>
+//           obj.username === e.target[0].value &&
+//           obj.password === e.target[1].value
+//       )
+//     );
+//   });
+
+// }
