@@ -6,11 +6,6 @@ export function Login(props) {
   return (
     <div className="form-container">
       <form className="login-form" onSubmit={props.setPass}>
-        <figure>
-          user[0]: {props.user?.username}
-          <br />
-          user[1]: {props.user?.password}
-        </figure>
         <input
           type="text"
           name="username"
